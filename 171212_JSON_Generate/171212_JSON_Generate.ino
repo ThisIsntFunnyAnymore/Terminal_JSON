@@ -34,16 +34,19 @@ void setup() {
   //
   // Most of the time, you can rely on the implicit casts.
   // In other case, you can do root.set<long>("time", 1351824120);
-  root["sensor"] = "gps";
-  root["time"] = 1351824120;
+  root["hostname"] = "myhost.noip.com";
+  root["hostname"] = "psych! it's 192.168.0.1";
+  root["SSID"] = "TheOtherNetwork_2G";
+  root["auth"] = "ThreeCatHouse";
+  root["token"] = "f2435662623040aaba317a4e503594b7";
 
   // Add a nested array.
   //
   // It's also possible to create the array separately and add it to the
   // JsonObject but it's less efficient.
-  JsonArray& data = root.createNestedArray("data");
-  data.add(48.756080);
-  data.add(2.302038);
+  // JsonArray& data = root.createNestedArray("data");
+  // data.add(48.756080);
+  // data.add(2.302038);
 
   root.printTo(Serial);
   // This prints:
