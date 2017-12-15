@@ -39,7 +39,7 @@ SoftwareSerial SwSerial(10, 11); // RX, TX
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "f2435662623040aaba317a4e503594b7";
+char auth[] = "f***********************7";
 
 // Attach virtual serial terminal to Virtual Pin V1
 WidgetTerminal terminal(V1);
