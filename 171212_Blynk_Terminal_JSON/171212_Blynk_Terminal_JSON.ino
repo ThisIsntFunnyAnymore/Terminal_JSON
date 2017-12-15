@@ -235,13 +235,12 @@ void setup()
   // your hardware gets connected to Blynk Server
   terminal.println(F("Blynk v" BLYNK_VERSION ": Device started"));
   terminal.println(F("-------------"));
-  terminal.println(F("Enter data as follows"));
-  terminal.println(F("to set up board for local server"));
-  // set hostname or default to blynk-cloud
-  terminal.println(F("type:parameter [YourValueHere]"));
+  terminal.println(F("Enter data as follows to setup local Blynk server"));
+    // set hostname or default to blynk-cloud
+  terminal.println(F("     >parameter [YourValueHere]"));
   terminal.println(F("Available parameter values: hostname, SSID, auth,"));
-  terminal.println(F("token, print, done. print has no value. Type 'done'"));
-  terminal.println(F("to write the JSON string to EEPROM"));
+  terminal.println(F("token, print, done. print has no value. Type"));
+  terminal.println(F("'done' to write the JSON string to EEPROM"));
   terminal.flush();
 
   //Initialize with default hostname. This means that if I start with
